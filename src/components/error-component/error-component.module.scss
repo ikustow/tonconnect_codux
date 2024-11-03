@@ -1,0 +1,12 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.link {
+    color: blue;
+    text-decoration-line: underline;
+}
