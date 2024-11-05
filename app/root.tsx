@@ -7,6 +7,7 @@ import {
     isRouteErrorResponse,
     useRouteError,
 } from '@remix-run/react';
+import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import { ErrorComponent } from '~/components/error-component/error-component';
 import '~/styles/index.scss';
 
@@ -31,7 +32,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
     return (
         <div>
-            <Outlet />
+            <TonConnectUIProvider manifestUrl="https://ton-connect.github.io/demo-dapp-with-wallet/tonconnect-manifest.json">
+                <Outlet />
+            </TonConnectUIProvider>
         </div>
     );
 }

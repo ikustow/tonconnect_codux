@@ -14,6 +14,7 @@
     "@netlify/remix-adapter": "^2.5.1",
     "@remix-run/node": "^2.12.1",
     "@remix-run/react": "^2.12.1",
+    "@tonconnect/ui-react": "^2.0.9",
     "@types/node": "^20.14.8",
     "classnames": "^2.5.1",
     "isbot": "^4",

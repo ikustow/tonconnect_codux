@@ -3,8 +3,13 @@ import styles from './_index.module.scss';
 import { LinksFunction, LoaderFunctionArgs, MetaFunction } from '@remix-run/node';
 import commonStyles from '~/styles/common-styles.module.scss';
 import { getUrlOriginWithPath } from '~/utils';
-import TypescriptSvg from '../../../src/assets/svg/typescript.svg';
-import ViteSvg from '../../../src/assets/svg/vite.svg';
+import styles0 from './route.module.scss';
+import ImagePng from '../../../src/assets/img/image.png';
+import ImageCopyPng from '../../../src/assets/img/image copy.png';
+import ImageCopy2Png from '../../../src/assets/img/image copy 2.png';
+import { ReactComponent as SupabaseLogoSvg } from '../../../src/assets/svg/supabase-logo.svg';
+import { ConnectButton } from '../../../src/components/connect-button/connect-button';
+import { TonConnectButton } from '@tonconnect/ui-react';
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };
@@ -12,18 +17,17 @@ export const loader = ({ request }: LoaderFunctionArgs) => {
 
 export default function HomePage() {
     return (
-        <div className={styles.root}>
-            <h2>Welcome to your App Homepage 🎉</h2>
-            <span>
-                Double click to edit App component
-                <br />
-                &amp; drag here elements from + Add <b>Elements</b> Panel
-            </span>
-            <p className={styles.paragraph}>
-                This project is using <img src={ViteSvg} width="12" />+
-                <img src={TypescriptSvg} width="12" />
-                Visit vitejs.dev to learn more.{' '}
-            </p>
+        <div className={styles0['home-page-class']}>
+            <h3 className={styles0.header1}>DonApp</h3>
+            <img src={ImagePng} height="250" />
+            <h3 className={styles0.header2}>Connect with Ton</h3>
+            <ConnectButton className={styles0.connectButton} />
+            <h2 className={styles0.header3}>Made with</h2>
+            <div className={styles0.div2}>
+                <img src={ImageCopy2Png} height="60" className={styles0.img1} />
+                <img src={ImageCopyPng} height="60" className={styles0.img2} />
+                <SupabaseLogoSvg className={styles0.supabaseLogoSvg} />
+            </div>
         </div>
     );
 }

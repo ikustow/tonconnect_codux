@@ -1,0 +1,68 @@
+@import '../../../src/styles/theme.module.scss';
+.home-page-class {
+    display: flex;
+    background-color: $black;
+    font-family: Courier, monospace;
+    font-weight: 400;
+    line-height: 24px;
+    font-variant: traditional;
+    border: 2px solid #1381ed;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    margin: 0px;
+    align-items: center;
+}
+.div1 {
+    height: 30px;
+    width: 30px;
+    background-color: #ad2727;
+}
+.header1 {
+    color: $white;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.header2 {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 26px;
+}
+.header3 {
+    color: $white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 24px;
+}
+.img1 {
+    border-radius: 20px;
+    padding: 4px;
+}
+.div2 {
+    padding: 4px;
+    margin: 4px;
+    align-self: center;
+    flex-basis: 0px;
+    flex-shrink: 1;
+}
+.img2 {
+    padding: 4px;
+}
+.supabaseLogoSvg {
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+}
+.connectButton {
+    padding: 8px;
+}
