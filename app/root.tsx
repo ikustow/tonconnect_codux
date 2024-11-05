@@ -43,7 +43,7 @@ export function ErrorBoundary() {
     const error = useRouteError();
     const { title, message } = getErrorDetails(error);
 
-    return <ErrorComponent title={title} message={message} />;
+    return <ErrorComponent message={message} title={title} />;
 }
 
 function getErrorDetails(error: unknown) {

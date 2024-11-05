@@ -4,10 +4,14 @@ import App from 'app/root';
 import HomePage from 'app/routes/_index/route';
 import { ROUTES } from '~/router/config';
 
+
 const AppWrapper = createRemixStub([
     {
         Component: () => {
-            return <App />;
+            return (
+                  <App />
+            );
+
         },
         children: [
             {

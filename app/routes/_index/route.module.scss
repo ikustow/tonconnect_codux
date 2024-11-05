@@ -1,7 +1,7 @@
-@import '../../../src/styles/theme.module.scss';
+@use '../../../src/styles/theme.module' as theme;
 .home-page-class {
     display: flex;
-    background-color: $black;
+    background-color: black;
     font-family: Courier, monospace;
     font-weight: 400;
     line-height: 24px;
@@ -11,11 +11,15 @@
     flex-direction: column;
     justify-content: start;
     align-content: center;
-    padding: 20px;
     box-sizing: border-box;
     border-top-left-radius: 5px;
     margin: 0px;
     align-items: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: static;
 }
 .div1 {
     height: 30px;
@@ -23,7 +27,7 @@
     background-color: #ad2727;
 }
 .header1 {
-    color: $white;
+    color: white;
     font-size: 40px;
     font-weight: 700;
     font-family: Verdana, sans-serif;
@@ -32,14 +36,14 @@
     margin-top: 40px;
 }
 .header2 {
-    color: $white;
+    color: white;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
     margin: 26px;
 }
 .header3 {
-    color: $white;
+    color: white;
     font-size: 20px;
     font-weight: 700;
     padding: 24px;
