@@ -1,0 +1,40 @@
+.root {
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 10px;
+    position: static;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.navbar-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Убираем подчеркивание и делаем цвет как у кнопки */
+.navbar-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.navbar-btn:hover .navbar-link {
+    color: #fff;
+}

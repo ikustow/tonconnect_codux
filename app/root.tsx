@@ -10,6 +10,8 @@ import {
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import { ErrorComponent } from '~/components/error-component/error-component';
 import '~/styles/index.scss';
+import styles from './root.module.scss';
+import classNames from 'classnames';
 
 export function Layout({ children }: { children: React.ReactNode }) {
     return (

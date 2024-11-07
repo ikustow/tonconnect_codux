@@ -6,6 +6,7 @@ import { ConnectButton } from '~/components/connect-button/connect-button';
 import ImageCopyPng from '../../../src/assets/img/image copy.png';
 import ImageCopy2Png from '../../../src/assets/img/image copy 2.png';
 import SupabasePng from '../../../src/assets/img/supabase.png';
+import classNames from 'classnames';
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };
@@ -16,11 +17,11 @@ export default function HomePage() {
         <div className={styles0['home-page-class']}>
             <h3 className={styles0.header1}>DonApp</h3>
             <img src={ImagePng} height="250" alt={'h'} />
-            <h3 className={styles0.header2}>Connect with Ton</h3>
+            <h3 className={classNames(styles0.header2, styles0.header4)}>Connect with Ton</h3>
             <ConnectButton className={styles0.connectButton} />
             <h2 className={styles0.header3}>Made with</h2>
             <div className={styles0.div2}>
-                <img src={SupabasePng}  height="60" className={styles0.img1} alt={'g'}/>
+                <img src={SupabasePng} height="60" className={styles0.img1} alt={'g'} />
                 <img src={ImageCopy2Png} height="60" className={styles0.img1} alt={'g'} />
                 <img src={ImageCopyPng} height="60" className={styles0.img2} alt={'g'} />
             </div>
